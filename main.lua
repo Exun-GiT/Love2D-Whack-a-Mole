@@ -60,7 +60,8 @@ function love.draw()
   love.graphics.setColor(1, 1, 1)
   love.graphics.setFont(scoreFont)
   if gameover == false then
-    love.graphics.print(score,0,0)
+    love.graphics.print("score: ".. score,0,0)
+    love.graphics.print("time left:  : ".. math.ceil(timer),200,0)
   else
     love.graphics.print("time up. score: ".. score ,0,0)
   end
